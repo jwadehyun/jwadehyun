@@ -1,398 +1,456 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nook Inc. — Deserted Island Getaway Package</title>
-<meta name="description" content="Animal Crossing New Horizons Style Check In">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Baloo+2:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><path fill='%2371C63B' d='M33 6C17 12 7 24 7 38c0 12 9 21 21 21 15 0 29-14 29-31 0-10-9-18-24-22z'/></svg>">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nook Inc. — Deserted Island Getaway Package</title>
+  <meta name="description" content="Animal Crossing New Horizons Style Check In">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Baloo+2:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><path fill='%2371C63B' d='M33 6C17 12 7 24 7 38c0 12 9 21 21 21 15 0 29-14 29-31 0-10-9-18-24-22z'/></svg>">
 </head>
+
 <body class="is-locked">
 
-<!-- ══════════════════════════════════════════════════════════
+  <!-- ══════════════════════════════════════════════════════════
      Shared SVG symbols
      ══════════════════════════════════════════════════════════ -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="i-leaf" viewBox="0 0 64 64">
-    <path d="M33 5C16.5 11.5 6 24 6 38.5 6 51 15.5 60 28 60c15.5 0 30-14.5 30-32 0-10.5-9.5-19-25-23z"/>
-    <path d="M31 57c-1-14 1-27 8-38" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" opacity=".85"/>
-  </symbol>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-leaf" viewBox="0 0 64 64">
+      <path d="M33 5C16.5 11.5 6 24 6 38.5 6 51 15.5 60 28 60c15.5 0 30-14.5 30-32 0-10.5-9.5-19-25-23z" />
+      <path d="M31 57c-1-14 1-27 8-38" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round"
+        opacity=".85" />
+    </symbol>
 
-  <symbol id="i-plane-takeoff" viewBox="0 0 64 48">
-    <path d="M6.5 26.8 4 18.4l4.2 1.1 3.1 3.6 7.6 2-6.2-13.6 5.2 1.4 9.6 12.9 12.9 3.4c2.9.8 5.6 1.2 7.7.4 2.3-.9 3.1-2.4 2.6-3.9-.4-1.2-1.5-1.9-3.2-2.4l-2.7-.8.6-2.3 3.1.8c3.6 1 5.9 2.8 6.7 5.6.9 3.4-1 6.6-5.3 8.2-3.3 1.2-7 1-11-.1L6.5 26.8Z"/>
-    <rect x="2" y="39" width="56" height="3.4" rx="1.7"/>
-  </symbol>
+    <symbol id="i-plane-takeoff" viewBox="0 0 64 48">
+      <path
+        d="M6.5 26.8 4 18.4l4.2 1.1 3.1 3.6 7.6 2-6.2-13.6 5.2 1.4 9.6 12.9 12.9 3.4c2.9.8 5.6 1.2 7.7.4 2.3-.9 3.1-2.4 2.6-3.9-.4-1.2-1.5-1.9-3.2-2.4l-2.7-.8.6-2.3 3.1.8c3.6 1 5.9 2.8 6.7 5.6.9 3.4-1 6.6-5.3 8.2-3.3 1.2-7 1-11-.1L6.5 26.8Z" />
+      <rect x="2" y="39" width="56" height="3.4" rx="1.7" />
+    </symbol>
 
-  <symbol id="i-seaplane" viewBox="0 0 100 64">
-    <path d="M70 34 74 12h8c2 0 3 2 2 4l-6 18z"/>
-    <path d="M16 30c0-5 5-9 12-9h36c8 0 16 4 22 10 2 2 1 5-2 5H28c-7 0-12-2-12-6z"/>
-    <rect x="26" y="14" width="46" height="5" rx="2.5"/>
-    <rect x="46" y="17" width="4" height="6" rx="1.5"/>
-    <rect x="30" y="25" width="7" height="5" rx="2" opacity=".35"/>
-    <rect x="41" y="25" width="7" height="5" rx="2" opacity=".35"/>
-    <rect x="52" y="25" width="7" height="5" rx="2" opacity=".35"/>
-    <rect x="30" y="35" width="4" height="11" rx="2"/>
-    <rect x="62" y="35" width="4" height="11" rx="2"/>
-    <path d="M18 46h62c4 0 6 2 6 4s-2 4-6 4H26c-6 0-10-3-10-6 0-1 1-2 2-2z"/>
-  </symbol>
+    <symbol id="i-seaplane" viewBox="0 0 100 64">
+      <path d="M70 34 74 12h8c2 0 3 2 2 4l-6 18z" />
+      <path d="M16 30c0-5 5-9 12-9h36c8 0 16 4 22 10 2 2 1 5-2 5H28c-7 0-12-2-12-6z" />
+      <rect x="26" y="14" width="46" height="5" rx="2.5" />
+      <rect x="46" y="17" width="4" height="6" rx="1.5" />
+      <rect x="30" y="25" width="7" height="5" rx="2" opacity=".35" />
+      <rect x="41" y="25" width="7" height="5" rx="2" opacity=".35" />
+      <rect x="52" y="25" width="7" height="5" rx="2" opacity=".35" />
+      <rect x="30" y="35" width="4" height="11" rx="2" />
+      <rect x="62" y="35" width="4" height="11" rx="2" />
+      <path d="M18 46h62c4 0 6 2 6 4s-2 4-6 4H26c-6 0-10-3-10-6 0-1 1-2 2-2z" />
+    </symbol>
 
-  <symbol id="i-palm" viewBox="0 0 130 170">
-    <path d="M60 44c5 32 3 76-6 126h17c-2-50 0-92 4-124z"/>
-    <path d="M60 44C46 24 24 15 2 20c17-3 36 4 48 17-17-8-36-4-49 9 15-9 34-9 49-1-13 3-26 14-30 29 9-16 24-25 40-24z"/>
-    <path d="M64 44c14-20 36-29 58-24-17-3-36 4-48 17 17-8 36-4 49 9-15-9-34-9-49-1 13 3 26 14 30 29-9-16-24-25-40-24z"/>
-    <path d="M61 42c-3-17 3-31 17-40-9 11-12 25-9 40z"/>
-  </symbol>
+    <symbol id="i-palm" viewBox="0 0 130 170">
+      <path d="M60 44c5 32 3 76-6 126h17c-2-50 0-92 4-124z" />
+      <path
+        d="M60 44C46 24 24 15 2 20c17-3 36 4 48 17-17-8-36-4-49 9 15-9 34-9 49-1-13 3-26 14-30 29 9-16 24-25 40-24z" />
+      <path
+        d="M64 44c14-20 36-29 58-24-17-3-36 4-48 17 17-8 36-4 49 9-15-9-34-9-49-1 13 3 26 14 30 29-9-16-24-25-40-24z" />
+      <path d="M61 42c-3-17 3-31 17-40-9 11-12 25-9 40z" />
+    </symbol>
 
-  <symbol id="i-dodo" viewBox="0 0 64 64">
-    <circle cx="32" cy="32" r="29" fill="none" stroke="currentColor" stroke-width="4"/>
-    <path fill="currentColor" d="M36 14c-9 0-16 6.5-16 15 0 5 2.5 9 6 11.5V50c0 1.4 1.1 2.5 2.5 2.5S31 51.4 31 50v-6.6c1.6.4 3.3.6 5 .6 1 0 2-.1 3-.3V50c0 1.4 1.1 2.5 2.5 2.5S44 51.4 44 50v-8.7c4.3-2.7 7-7.1 7-12.3 0-8.5-6-15-15-15z"/>
-    <path fill="#F7D046" d="M21 27.5 10 31l11 3.5c-.6-1.1-.9-2.3-.9-3.5s.3-2.4.9-3.5z"/>
-    <circle cx="27" cy="26" r="2.6" fill="#2B2B2B"/>
-  </symbol>
-</svg>
+    <symbol id="i-dodo" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="29" fill="none" stroke="currentColor" stroke-width="4" />
+      <path fill="currentColor"
+        d="M36 14c-9 0-16 6.5-16 15 0 5 2.5 9 6 11.5V50c0 1.4 1.1 2.5 2.5 2.5S31 51.4 31 50v-6.6c1.6.4 3.3.6 5 .6 1 0 2-.1 3-.3V50c0 1.4 1.1 2.5 2.5 2.5S44 51.4 44 50v-8.7c4.3-2.7 7-7.1 7-12.3 0-8.5-6-15-15-15z" />
+      <path fill="#F7D046" d="M21 27.5 10 31l11 3.5c-.6-1.1-.9-2.3-.9-3.5s.3-2.4.9-3.5z" />
+      <circle cx="27" cy="26" r="2.6" fill="#2B2B2B" />
+    </symbol>
+  </svg>
 
 
-<!-- ══════════════════════════════════════════════════════════
+  <!-- ══════════════════════════════════════════════════════════
      STAGE 1 — CHECK-IN COUNTER
      ══════════════════════════════════════════════════════════ -->
-<section class="stage stage--checkin is-active" id="stage-checkin" aria-label="Check-in counter">
+  <section class="stage stage--checkin is-active" id="stage-checkin" aria-label="Check-in counter">
 
-  <video class="checkin__video" autoplay muted loop playsinline
-         poster="assets/checkin-poster.jpg" aria-hidden="true">
-    <source src="assets/welcome.mp4" type="video/mp4">
-  </video>
-  <div class="checkin__scrim" aria-hidden="true"></div>
+    <video class="checkin__video" autoplay muted loop playsinline poster="assets/checkin-poster.jpg" aria-hidden="true">
+      <source src="assets/welcome.mp4" type="video/mp4">
+    </video>
+    <div class="checkin__scrim" aria-hidden="true"></div>
 
-  <div class="nook-sign">
-    <svg class="nook-sign__leaf" viewBox="0 0 64 64" aria-hidden="true"><use href="#i-leaf"/></svg>
-    <span class="nook-sign__word">Nook Inc.</span>
-    <span class="nook-sign__rule" aria-hidden="true"></span>
-    <span class="nook-sign__pkg">
-      <b>Deserted Island Getaway Package</b>
-      <i>Paquete de escapada a islas desiertas</i>
-    </span>
-  </div>
-
-  <div class="dialogue" id="dialogue">
-    <span class="dialogue__tag" id="speakerTag">Tommy</span>
-
-    <div class="dialogue__box">
-      <p class="dialogue__text" id="dialogueText" aria-live="polite"></p>
-
-      <form class="fields" id="checkinForm" novalidate hidden>
-        <label class="field">
-          <span class="field__label">Your name</span>
-          <input id="fName" name="name" type="text" maxlength="20"
-                 autocomplete="given-name" placeholder="Traveler" required>
-        </label>
-
-        <label class="field">
-          <span class="field__label">What are you famous for?</span>
-          <input id="fFamous" name="famous" type="text" maxlength="32"
-                 placeholder="Very First Island Dweller" required>
-        </label>
-
-        <label class="field">
-          <span class="field__label">Island you're visiting from</span>
-          <input id="fIsland" name="island" type="text" maxlength="24"
-                 placeholder="L'isle Joyeuse" required>
-        </label>
-
-        <p class="fields__error" id="formError" role="alert" hidden>
-          Hmm! Looks like we still need all three, if you don't mind.
-        </p>
-
-        <button class="btn-nook" type="submit">
-          Check in
-          <svg viewBox="0 0 64 48" aria-hidden="true"><use href="#i-plane-takeoff"/></svg>
-        </button>
-      </form>
-
-      <span class="dialogue__next" id="dialogueNext" aria-hidden="true"></span>
+    <div class="nook-sign">
+      <svg class="nook-sign__leaf" viewBox="0 0 64 64" aria-hidden="true">
+        <use href="#i-leaf" />
+      </svg>
+      <span class="nook-sign__word">Nook Inc.</span>
+      <span class="nook-sign__rule" aria-hidden="true"></span>
+      <span class="nook-sign__pkg">
+        <b>Deserted Island Getaway Package</b>
+        <i>Paquete de escapada a islas desiertas</i>
+      </span>
     </div>
-  </div>
 
-  <button class="skip" id="skipIntro" type="button">Skip check-in ▸</button>
-</section>
+    <div class="dialogue" id="dialogue">
+      <span class="dialogue__tag" id="speakerTag">Tommy</span>
+
+      <div class="dialogue__box">
+        <p class="dialogue__text" id="dialogueText" aria-live="polite"></p>
+
+        <form class="fields" id="checkinForm" novalidate hidden>
+          <label class="field">
+            <span class="field__label">Your name</span>
+            <input id="fName" name="name" type="text" maxlength="20" autocomplete="given-name" placeholder="Traveler"
+              required>
+          </label>
+
+          <label class="field">
+            <span class="field__label">What are you famous for?</span>
+            <input id="fFamous" name="famous" type="text" maxlength="32" placeholder="Very First Island Dweller"
+              required>
+          </label>
+
+          <label class="field">
+            <span class="field__label">Island you're visiting from</span>
+            <input id="fIsland" name="island" type="text" maxlength="24" placeholder="L'isle Joyeuse" required>
+          </label>
+
+          <p class="fields__error" id="formError" role="alert" hidden>
+            Hmm! Looks like we still need all three, if you don't mind.
+          </p>
+
+          <button class="btn-nook" type="submit">
+            Check in
+            <svg viewBox="0 0 64 48" aria-hidden="true">
+              <use href="#i-plane-takeoff" />
+            </svg>
+          </button>
+        </form>
+
+        <span class="dialogue__next" id="dialogueNext" aria-hidden="true"></span>
+      </div>
+    </div>
+
+    <button class="skip" id="skipIntro" type="button">Skip check-in ▸</button>
+  </section>
 
 
-<!-- ══════════════════════════════════════════════════════════
+  <!-- ══════════════════════════════════════════════════════════
      STAGE 2 — FLIGHT INFORMATION
      ══════════════════════════════════════════════════════════ -->
-<section class="stage stage--flight" id="stage-flight" aria-label="Flight information" hidden>
+  <section class="stage stage--flight" id="stage-flight" aria-label="Flight information" hidden>
 
-  <h1 class="flight__title">
-    <svg viewBox="0 0 64 48" aria-hidden="true"><use href="#i-plane-takeoff"/></svg>
-    Flight Information
-  </h1>
-
-  <div class="flight__row">
-    <span class="flight__pip" aria-hidden="true"></span>
-
-    <div class="fcol fcol--airline">
-      <span class="fcol__label">Airline</span>
-      <div class="fbox fbox--dal">
-        <svg class="dal__mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#i-dodo"/></svg>
-        <span class="dal__word">DAL</span>
-      </div>
-    </div>
-
-    <div class="fcol fcol--passenger">
-      <span class="fcol__label">Passenger</span>
-      <div class="fbox">
-        <span class="fbox__tick fbox__tick--l" aria-hidden="true"></span>
-        <span class="fbox__tick fbox__tick--r" aria-hidden="true"></span>
-        <span class="fbox__sub" id="outFamous">Curious Visitor</span>
-        <span class="fbox__main" id="outName">Traveler</span>
-      </div>
-    </div>
-
-    <div class="fcol fcol--from">
-      <span class="fcol__label">Arriving From</span>
-      <div class="fbox">
-        <span class="fbox__tick fbox__tick--l" aria-hidden="true"></span>
-        <span class="fbox__tick fbox__tick--r" aria-hidden="true"></span>
-        <span class="fbox__main fbox__main--solo" id="outIsland">Far Far Away</span>
-      </div>
-    </div>
-  </div>
-
-  <p class="flight__hint" id="flightHint">Now boarding…</p>
-
-  <div class="flight__scene" aria-hidden="true">
-    <svg class="palm palm--l" viewBox="0 0 130 170"><use href="#i-palm"/></svg>
-    <svg class="palm palm--r" viewBox="0 0 130 170"><use href="#i-palm"/></svg>
-
-    <div class="clouds">
-      <span class="cloud c1"></span><span class="cloud c2"></span>
-      <span class="cloud c3"></span><span class="cloud c4"></span>
-    </div>
-
-    <ol class="track" id="track">
-      <li class="node node--goal"><span>Starting<br>Descent</span></li>
-      <li class="arrow"></li>
-      <li class="node node--hop"><svg viewBox="0 0 100 64"><use href="#i-seaplane"/></svg></li>
-      <li class="arrow"></li>
-      <li class="node node--hop"><svg viewBox="0 0 100 64"><use href="#i-seaplane"/></svg></li>
-      <li class="arrow"></li>
-      <li class="node node--hop"><svg viewBox="0 0 100 64"><use href="#i-seaplane"/></svg></li>
-      <li class="arrow"></li>
-      <li class="node node--hop"><svg viewBox="0 0 100 64"><use href="#i-seaplane"/></svg></li>
-    </ol>
-
-    <div class="island-silhouette">
-      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-        <path d="M0 34c60 0 100-22 170-22s100 17 170 17 90-13 150-13 90 15 150 15 90-17 150-17 100 19 160 19 90-21 150-21 100 19 160 19 80-15 140-11v104H0Z"/>
+    <h1 class="flight__title">
+      <svg viewBox="0 0 64 48" aria-hidden="true">
+        <use href="#i-plane-takeoff" />
       </svg>
+      Flight Information
+    </h1>
+
+    <div class="flight__row">
+      <span class="flight__pip" aria-hidden="true"></span>
+
+      <div class="fcol fcol--airline">
+        <span class="fcol__label">Airline</span>
+        <div class="fbox fbox--dal">
+          <svg class="dal__mark" viewBox="0 0 64 64" aria-hidden="true">
+            <use href="#i-dodo" />
+          </svg>
+          <span class="dal__word">DAL</span>
+        </div>
+      </div>
+
+      <div class="fcol fcol--passenger">
+        <span class="fcol__label">Passenger</span>
+        <div class="fbox">
+          <span class="fbox__tick fbox__tick--l" aria-hidden="true"></span>
+          <span class="fbox__tick fbox__tick--r" aria-hidden="true"></span>
+          <span class="fbox__sub" id="outFamous">Curious Visitor</span>
+          <span class="fbox__main" id="outName">Traveler</span>
+        </div>
+      </div>
+
+      <div class="fcol fcol--from">
+        <span class="fcol__label">Arriving From</span>
+        <div class="fbox">
+          <span class="fbox__tick fbox__tick--l" aria-hidden="true"></span>
+          <span class="fbox__tick fbox__tick--r" aria-hidden="true"></span>
+          <span class="fbox__main fbox__main--solo" id="outIsland">Far Far Away</span>
+        </div>
+      </div>
     </div>
-  </div>
 
-</section>
+    <p class="flight__hint" id="flightHint">Now boarding…</p>
+
+    <div class="flight__scene" aria-hidden="true">
+      <svg class="palm palm--l" viewBox="0 0 130 170">
+        <use href="#i-palm" />
+      </svg>
+      <svg class="palm palm--r" viewBox="0 0 130 170">
+        <use href="#i-palm" />
+      </svg>
+
+      <div class="clouds">
+        <span class="cloud c1"></span><span class="cloud c2"></span>
+        <span class="cloud c3"></span><span class="cloud c4"></span>
+      </div>
+
+      <ol class="track" id="track">
+        <li class="node node--goal"><span>Starting<br>Descent</span></li>
+        <li class="arrow"></li>
+        <li class="node node--hop"><svg viewBox="0 0 100 64">
+            <use href="#i-seaplane" />
+          </svg></li>
+        <li class="arrow"></li>
+        <li class="node node--hop"><svg viewBox="0 0 100 64">
+            <use href="#i-seaplane" />
+          </svg></li>
+        <li class="arrow"></li>
+        <li class="node node--hop"><svg viewBox="0 0 100 64">
+            <use href="#i-seaplane" />
+          </svg></li>
+        <li class="arrow"></li>
+        <li class="node node--hop"><svg viewBox="0 0 100 64">
+            <use href="#i-seaplane" />
+          </svg></li>
+      </ol>
+
+      <div class="island-silhouette">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path
+            d="M0 34c60 0 100-22 170-22s100 17 170 17 90-13 150-13 90 15 150 15 90-17 150-17 100 19 160 19 90-21 150-21 100 19 160 19 80-15 140-11v104H0Z" />
+        </svg>
+      </div>
+    </div>
+
+  </section>
 
 
-<!-- ══════════════════════════════════════════════════════════
+  <!-- ══════════════════════════════════════════════════════════
      STAGE 3 — THE ISLAND (the actual site)
      ══════════════════════════════════════════════════════════ -->
-<div class="stage stage--site" id="stage-site" hidden>
+  <div class="stage stage--site" id="stage-site" hidden>
 
-  <header class="masthead">
-    <a class="brand" href="#hello">
-      <svg viewBox="0 0 64 64" aria-hidden="true"><use href="#i-leaf"/></svg>
-      <span>Nook Inc.</span>
-    </a>
+    <header class="masthead">
+      <a class="brand" href="#hello">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <use href="#i-leaf" />
+        </svg>
+        <span>Nook Inc.</span>
+      </a>
 
-    <nav class="nav" aria-label="Sections">
+      <nav class="nav" aria-label="Sections">
+        <ul>
+          <li><a href="#hello" data-nav="hello">Hello</a></li>
+          <li><a href="#about" data-nav="about">About Me</a></li>
+          <li><a href="#resume" data-nav="resume">Resume</a></li>
+          <li><a href="#projects" data-nav="projects">Projects</a></li>
+        </ul>
+      </nav>
+
+      <button class="passport-chip" id="visitorChip" type="button" title="Check in again">
+        <span class="passport-chip__name" id="chipName">Traveler</span>
+        <span class="passport-chip__isle" id="chipIsle">Far Far Away</span>
+      </button>
+    </header>
+
+    <nav class="dots" aria-label="Section navigation">
       <ul>
-        <li><a href="#hello"    data-nav="hello">Hello</a></li>
-        <li><a href="#about"    data-nav="about">About Me</a></li>
-        <li><a href="#resume"   data-nav="resume">Resume</a></li>
-        <li><a href="#projects" data-nav="projects">Projects</a></li>
+        <li><a href="#hello" data-dot="hello" aria-label="Hello"><span></span></a></li>
+        <li><a href="#about" data-dot="about" aria-label="About Me"><span></span></a></li>
+        <li><a href="#resume" data-dot="resume" aria-label="Resume"><span></span></a></li>
+        <li><a href="#projects" data-dot="projects" aria-label="Side Projects"><span></span></a></li>
       </ul>
     </nav>
 
-    <button class="passport-chip" id="visitorChip" type="button" title="Check in again">
-      <span class="passport-chip__name" id="chipName">Traveler</span>
-      <span class="passport-chip__isle" id="chipIsle">Far Far Away</span>
-    </button>
-  </header>
+    <main class="scroller" id="scroller">
 
-  <nav class="dots" aria-label="Section navigation">
-    <ul>
-      <li><a href="#hello"    data-dot="hello"    aria-label="Hello"><span></span></a></li>
-      <li><a href="#about"    data-dot="about"    aria-label="About Me"><span></span></a></li>
-      <li><a href="#resume"   data-dot="resume"   aria-label="Resume"><span></span></a></li>
-      <li><a href="#projects" data-dot="projects" aria-label="Side Projects"><span></span></a></li>
-    </ul>
-  </nav>
-
-  <main class="scroller" id="scroller">
-
-    <!-- ─── 01 HELLO ─────────────────────────────────── -->
-    <section class="panel panel--hello" id="hello" data-label="Hello">
-      <div class="sky" aria-hidden="true">
-        <span class="cloud-sky s1"></span><span class="cloud-sky s2"></span><span class="cloud-sky s3"></span>
-      </div>
-
-      <div class="panel__inner hello__inner">
-        <p class="kicker" data-reveal>Welcome to the island</p>
-        <h2 class="hello__hi" data-reveal>
-          Hi, <span id="greetName">friend</span>!
-        </h2>
-        <p class="hello__sub" data-reveal>
-          Nice to meet a fellow traveler from <b id="greetIsle">out there</b>.
-          I'm <b>Jade Jwa</b> —, a software engineer and full-time resident of this
-          little island of side projects.
-        </p>
-
-        <div class="hello__cta" data-reveal>
-          <a class="btn-nook btn-nook--sm" href="#about">Take the tour</a>
-          <a class="btn-nook btn-nook--ghost btn-nook--sm" href="mailto:hello@jwadehyun.com">Send me a letter</a>
+      <!-- ─── 01 HELLO ─────────────────────────────────── -->
+      <section class="panel panel--hello" id="hello" data-label="Hello">
+        <div class="sky" aria-hidden="true">
+          <span class="cloud-sky s1"></span><span class="cloud-sky s2"></span><span class="cloud-sky s3"></span>
         </div>
-      </div>
 
-      <div class="ground" aria-hidden="true">
-        <svg class="palm palm--hello-l" viewBox="0 0 130 170"><use href="#i-palm"/></svg>
-        <svg class="palm palm--hello-r" viewBox="0 0 130 170"><use href="#i-palm"/></svg>
-      </div>
+        <div class="panel__inner hello__inner">
+          <p class="kicker" data-reveal>Welcome to the island</p>
+          <h2 class="hello__hi" data-reveal>
+            Hi, <span id="greetName">friend</span>!
+          </h2>
+          <p class="hello__sub" data-reveal>
+            Nice to meet a fellow traveler from <b id="greetIsle">out there</b>.
+            I'm <b>Jade Jwa</b>, a software engineer and full-time resident of this
+            little island of side projects.
+          </p>
 
-      <a class="scroll-cue" href="#about">
-        <span>Scroll to explore</span>
-        <i aria-hidden="true"></i>
-      </a>
-    </section>
-
-    <!-- ─── 02 ABOUT ─────────────────────────────────── -->
-    <section class="panel panel--about" id="about" data-label="About Me">
-      <div class="panel__inner">
-        <h2 class="panel__title" data-reveal><span class="panel__num">02</span> About Me</h2>
-
-        <div class="about__grid">
-          <article class="passport" data-reveal>
-            <header class="passport__head">
-              <svg viewBox="0 0 64 64" aria-hidden="true"><use href="#i-leaf"/></svg>
-              Passport
-            </header>
-            <div class="passport__body">
-              <div class="passport__photo"><span>JW</span></div>
-              <dl class="passport__data">
-                <div><dt>Name</dt><dd>Jade Jwa</dd></div>
-                <div><dt>Island</dt><dd>Bellevue, WA</dd></div>
-                <div><dt>Role</dt><dd>Software Engineer</dd></div>
-                <div><dt>Fruit</dt><dd>🍑 Peach</dd></div>
-                <div><dt>Hemisphere</dt><dd>Northern</dd></div>
-              </dl>
-            </div>
-            <footer class="passport__foot">"Still figuring out the museum wing."</footer>
-          </article>
-
-          <div class="about__copy" data-reveal>
-            <p>
-              I've spent about eight years somewhere between design and engineering — close
-              enough to the code to ship it, close enough to the craft to argue about it.
-              Most of what I make starts as a spreadsheet and ends up looking like it was
-              always meant to be that way.
-            </p>
-            <p>
-              Off the clock I'm usually terraforming something: a side project, a classical piano piece, or my garden.
-            </p>
-
-            <ul class="chips">
-              <li>Java</li><li>Python</li><li>C#</li><li>System Design</li>
-              <li>SQL</li><li>Docker</li><li>Kubernetes</li><li>C/C++</li>
-            </ul>
+          <div class="hello__cta" data-reveal>
+            <a class="btn-nook btn-nook--sm" href="#about">Take the tour</a>
+            <a class="btn-nook btn-nook--ghost btn-nook--sm" href="mailto:hey@jwadehyun.com">Send me a letter</a>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- ─── 03 RESUME ────────────────────────────────── -->
-    <section class="panel panel--resume" id="resume" data-label="Résumé">
-      <div class="panel__inner">
-        <h2 class="panel__title" data-reveal>
-          <span class="panel__num">03</span> Résumé
-          <a class="btn-nook btn-nook--ghost btn-nook--sm panel__title-btn" href="#" download>Download PDF</a>
-        </h2>
+        <div class="ground" aria-hidden="true">
+          <svg class="palm palm--hello-l" viewBox="0 0 130 170">
+            <use href="#i-palm" />
+          </svg>
+          <svg class="palm palm--hello-r" viewBox="0 0 130 170">
+            <use href="#i-palm" />
+          </svg>
+        </div>
 
-        <ol class="achievements">
-          <li class="ach" data-reveal>
-            <span class="ach__miles"><svg viewBox="0 0 64 64"><use href="#i-leaf"/></svg>2023 —</span>
-            <div class="ach__body">
-              <h3>Product Engineer <em>· Northline</em></h3>
-              <p>Led the redesign of the core scheduling product; cut time-to-first-action from four minutes to forty seconds. Built the design system now used by six teams.</p>
+        <a class="scroll-cue" href="#about">
+          <span>Scroll to explore</span>
+          <i aria-hidden="true"></i>
+        </a>
+      </section>
+
+      <!-- ─── 02 ABOUT ─────────────────────────────────── -->
+      <section class="panel panel--about" id="about" data-label="About Me">
+        <div class="panel__inner">
+          <h2 class="panel__title" data-reveal><span class="panel__num">02</span> About Me</h2>
+
+          <div class="about__grid">
+            <article class="passport" data-reveal>
+              <header class="passport__head">
+                <svg viewBox="0 0 64 64" aria-hidden="true">
+                  <use href="#i-leaf" />
+                </svg>
+                Passport
+              </header>
+              <div class="passport__body">
+                <div class="passport__photo"><span></span></div>
+                <dl class="passport__data">
+                  <div>
+                    <dt>Name</dt>
+                    <dd>Jade Jwa</dd>
+                  </div>
+                  <div>
+                    <dt>Island</dt>
+                    <dd>Bellevue, WA</dd>
+                  </div>
+                  <div>
+                    <dt>Role</dt>
+                    <dd>Software Engineer</dd>
+                  </div>
+                  <div>
+                    <dt>School</dt>
+                    <dd>University of Washington</dd>
+                  </div>
+                  <div>
+                    <dt>Fruit</dt>
+                    <dd>🍑 Peach</dd>
+                  </div>
+                </dl>
+              </div>
+              <footer class="passport__foot">"Probably will try anything once"</footer>
+            </article>
+
+            <div class="about__copy" data-reveal>
+              <p>
+                Professionally, I'm a software engineer with 3+ years of experience in distributed systems. 
+              </p>
+              <p>
+                I am always looking for the next side quest - whether it be traveling to a new country, learning a new piano piece, 
+                deep diving into a niche topic that piques my interest, or working on a new side project that came to me at 2am. 
+              </p>
+
+              <ul class="chips">
+                <li>Java</li>
+                <li>Python</li>
+                <li>C#</li>
+                <li>System Design</li>
+                <li>SQL</li>
+                <li>Docker</li>
+                <li>Kubernetes</li>
+                <li>C/C++</li>
+              </ul>
             </div>
-          </li>
-          <li class="ach" data-reveal>
-            <span class="ach__miles"><svg viewBox="0 0 64 64"><use href="#i-leaf"/></svg>2020 — 23</span>
-            <div class="ach__body">
-              <h3>Design Engineer <em>· Studio Kern</em></h3>
-              <p>Prototyped and shipped client work across fintech and publishing. Owned front-end architecture for four launches.</p>
-            </div>
-          </li>
-          <li class="ach" data-reveal>
-            <span class="ach__miles"><svg viewBox="0 0 64 64"><use href="#i-leaf"/></svg>2018 — 20</span>
-            <div class="ach__body">
-              <h3>Front-end Developer <em>· Ardent Labs</em></h3>
-              <p>Early hire. Built the component library, the docs site, and most of the marketing pages nobody remembers.</p>
-            </div>
-          </li>
-          <li class="ach" data-reveal>
-            <span class="ach__miles"><svg viewBox="0 0 64 64"><use href="#i-leaf"/></svg>2018</span>
-            <div class="ach__body">
-              <h3>BA, Philosophy <em>· University of Michigan</em></h3>
-              <p>Still use it daily, mostly to justify rebuilding things that already work.</p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
+          </div>
+        </div>
+      </section>
 
-    <!-- ─── 04 PROJECTS ──────────────────────────────── -->
-    <section class="panel panel--projects" id="projects" data-label="Side Projects">
-      <div class="panel__inner">
-        <h2 class="panel__title" data-reveal><span class="panel__num">04</span> Side Projects</h2>
-        <p class="panel__lede" data-reveal>DIY recipes I've collected along the way.</p>
+      <!-- ─── 03 RESUME ────────────────────────────────── -->
+      <section class="panel panel--resume" id="resume" data-label="Résumé">
+        <div class="panel__inner">
+          <h2 class="panel__title" data-reveal>
+            <span class="panel__num">03</span> Résumé
+            <a class="btn-nook btn-nook--ghost btn-nook--sm panel__title-btn" href="#" download>Download PDF</a>
+          </h2>
 
-        <ul class="recipes">
-          <li data-reveal><a class="recipe" href="#">
-            <span class="recipe__icon">📖</span>
-            <h3>Marginalia</h3>
-            <p>A reading app that keeps your notes in the margin, where they belong.</p>
-            <span class="recipe__mats">SwiftUI · CloudKit</span>
-          </a></li>
-          <li data-reveal><a class="recipe" href="#">
-            <span class="recipe__icon">🔤</span>
-            <h3>Setwidth</h3>
-            <p>A tiny tool for testing typefaces at real sizes, in real paragraphs.</p>
-            <span class="recipe__mats">TypeScript · Canvas</span>
-          </a></li>
-          <li data-reveal><a class="recipe" href="#">
-            <span class="recipe__icon">✉️</span>
-            <h3>Slowmail</h3>
-            <p>Email that only delivers twice a day. Surprisingly hard to give up.</p>
-            <span class="recipe__mats">Go · Postgres</span>
-          </a></li>
-          <li data-reveal><a class="recipe" href="#">
-            <span class="recipe__icon">📷</span>
-            <h3>Field Notes</h3>
-            <p>A photo journal that writes the caption from the photo's metadata.</p>
-            <span class="recipe__mats">React · EXIF</span>
-          </a></li>
-        </ul>
+          <ol class="achievements">
+            <li class="ach" data-reveal>
+              <span class="ach__miles"><svg viewBox="0 0 64 64">
+                  <use href="#i-leaf" />
+                </svg>2022 — 2025</span>
+              <div class="ach__body">
+                <h3>Software Engineer <em>· Microsoft</em></h3>
+                <p>Worked in Azure Storage to build features to rebalance clusters and create a high performance storage solution
+                  for AI/ML workloads.
+                </p>
+              </div>
+            </li>
+            <li class="ach" data-reveal>
+              <span class="ach__miles"><svg viewBox="0 0 64 64">
+                  <use href="#i-leaf" />
+                </svg>2020</span>
+              <div class="ach__body">
+                <h3>Software Engineer Intern <em>· Puloon Technologies</em></h3>
+                <p>Created software in Java to detect counterfeit Euro bills with various image processing methods.</p>
+              </div>
+            </li>
+            <li class="ach" data-reveal>
+              <span class="ach__miles"><svg viewBox="0 0 64 64">
+                  <use href="#i-leaf" />
+                </svg>- 2021</span>
+              <div class="ach__body">
+                <h3>Bachelor of Science<em>· University of Washington</em></h3>
+                <p>Studied Electrical & Computer Engineering with a minor in Mathematics</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
 
-        <footer class="colophon" data-reveal>
-          <p>Thanks for visiting — <a href="mailto:hello@jwadehyun.com">hello@jwadehyun.com</a></p>
-          <p class="colophon__meta">Not affiliated with Nintendo. Just a fan with a text editor.</p>
-        </footer>
-      </div>
-    </section>
+      <!-- ─── 04 PROJECTS ──────────────────────────────── -->
+      <section class="panel panel--projects" id="projects" data-label="Side Projects">
+        <div class="panel__inner">
+          <h2 class="panel__title" data-reveal><span class="panel__num">04</span> Side Projects</h2>
+          <p class="panel__lede" data-reveal>DIY recipes I've collected along the way.</p>
 
-  </main>
-</div>
+          <ul class="recipes">
+            <li data-reveal><a class="recipe" href="#">
+                <span class="recipe__icon">📖</span>
+                <h3>Spotify to YouTube</h3>
+                <p>Was tired of Spotify having better playlists</p>
+                <span class="recipe__mats">python · html/css/javascript</span>
+              </a></li>
+            <li data-reveal><a class="recipe" href="#">
+                <span class="recipe__icon">🔤</span>
+                <h3>BubbleDiary</h3>
+                <p>Diary inspired from the Korean messaging app Bubble.</p>
+                <span class="recipe__mats">TypeScript</span>
+              </a></li>
+            <li data-reveal><a class="recipe" href="#">
+                <span class="recipe__icon">✉️</span>
+                <h3>Personal Website</h3>
+                <p>This is it.</p>
+                <span class="recipe__mats">html/css/javascript</span>
+              </a></li>
+            <li data-reveal><a class="recipe" href="#">
+                <span class="recipe__icon">📷</span>
+                <h3>Boeing Exit Burr Project</h3>
+                <p>Solving exit burr problems with Boeing</p>
+                <span class="recipe__mats">python · OpenCV</span>
+              </a></li>
+          </ul>
 
-<script src="js/main.js"></script>
+          <footer class="colophon" data-reveal>
+            <p>Thanks for visiting — <a href="mailto:hey@jwadehyun.com">hey@jwadehyun.com</a></p>
+            <p class="colophon__meta">(c) 2026 jwadehyun</p>
+          </footer>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
+
 </html>

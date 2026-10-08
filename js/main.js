@@ -186,7 +186,7 @@
     $('#greetIsle').textContent = visitor.island;
     $('#chipName').textContent  = visitor.name;
     $('#chipIsle').textContent  = visitor.island;
-    document.title = `${visitor.name} on the island — J. Wade Hyun`;
+    document.title = `jwadehyun`;
 
     await showStage('site');
     initSite();

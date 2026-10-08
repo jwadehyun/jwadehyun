@@ -553,7 +553,7 @@ button{ font:inherit; color:inherit; }
 .scroll-cue.is-hidden{ opacity:0; pointer-events:none; }
 
 /* ── about ── */
-.about__grid{ display:grid; grid-template-columns:minmax(0,20rem) minmax(0,1fr); gap:clamp(1.5rem,4vw,3rem); align-items:start; }
+.about__grid{ display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:clamp(1.5rem,4vw,3rem); align-items:start; }
 @media (max-width:820px){ .about__grid{ grid-template-columns:1fr; } }
 
 .passport{
@@ -570,7 +570,7 @@ button{ font:inherit; color:inherit; }
 .passport__head svg{ width:1.3em; height:auto; fill:#fff; }
 .passport__body{ display:flex; gap:1rem; padding:1rem; }
 .passport__photo{
-  flex:none; width:5.5rem; aspect-ratio:3/4; border-radius:.9rem;
+  flex:none; width:clamp(5.5rem,30%,9rem); aspect-ratio:1; border-radius:.9rem;
   background:repeating-linear-gradient(45deg,#EFE4C6,#EFE4C6 8px,#E8DBB8 8px,#E8DBB8 16px);
   border:3px solid #E0D0AA;
   display:grid; place-items:center;
