@@ -413,31 +413,69 @@
           <h2 class="panel__title" data-reveal><span class="panel__num">04</span> Side Projects</h2>
           <p class="panel__lede" data-reveal>DIY recipes I've collected along the way.</p>
 
-          <ul class="recipes">
-            <li data-reveal><a class="recipe" href="#">
+          <!--
+            ── PROJECT CARD TEMPLATE ── copy one <li>…</li> block to add a project.
+
+            <li data-reveal>
+              <article class="recipe">
                 <span class="recipe__icon">📖</span>
-                <h3>Spotify to YouTube</h3>
+                <h3><a class="recipe__link" href="SITE_URL" target="_blank" rel="noopener">Project Name</a></h3>
+                <p>One-line description.</p>
+                <div class="recipe__foot">
+                  <span class="recipe__mats">python · html/css</span>
+                  <a class="recipe__code" href="REPO_URL" target="_blank" rel="noopener">code ↗</a>
+                </div>
+              </article>
+            </li>
+
+            SITE_URL  where clicking anywhere on the card goes. Use the project's
+                      GitHub Pages site: https://jwadehyun.github.io/REPO-NAME/
+                      No live site? Put the repo URL here instead and delete the code ↗ link.
+            REPO_URL  the GitHub repo: https://github.com/jwadehyun/REPO-NAME
+            No link at all yet? Use a plain <h3>Project Name</h3> (no <a>); the card
+            just won't be clickable.
+          -->
+          <ul class="recipes">
+            <li data-reveal>
+              <article class="recipe">
+                <span class="recipe__icon">📖</span>
+                <h3><a class="recipe__link" href="https://github.com/jwadehyun/SpotifyToYTMusic" target="_blank" rel="noopener">Spotify to YouTube</a></h3>
                 <p>Was tired of Spotify having better playlists</p>
-                <span class="recipe__mats">python · html/css/javascript</span>
-              </a></li>
-            <li data-reveal><a class="recipe" href="#">
+                <div class="recipe__foot">
+                  <span class="recipe__mats">python · html/css/javascript</span>
+                </div>
+              </article>
+            </li>
+            <li data-reveal>
+              <article class="recipe">
                 <span class="recipe__icon">🔤</span>
-                <h3>BubbleDiary</h3>
+                <h3><a class="recipe__link" href="https://github.com/jwadehyun/BubbleDiary" target="_blank" rel="noopener">BubbleDiary</a></h3>
                 <p>Diary inspired from the Korean messaging app Bubble.</p>
-                <span class="recipe__mats">TypeScript</span>
-              </a></li>
-            <li data-reveal><a class="recipe" href="#">
+                <div class="recipe__foot">
+                  <span class="recipe__mats">TypeScript</span>
+                </div>
+              </article>
+            </li>
+            <li data-reveal>
+              <article class="recipe">
                 <span class="recipe__icon">✉️</span>
-                <h3>Personal Website</h3>
+                <h3><a class="recipe__link" href="https://github.com/jwadehyun/jwadehyun" target="_blank" rel="noopener">Personal Website</a></h3>
                 <p>This is it.</p>
-                <span class="recipe__mats">html/css/javascript</span>
-              </a></li>
-            <li data-reveal><a class="recipe" href="#">
+                <div class="recipe__foot">
+                  <span class="recipe__mats">html/css/javascript</span>
+                </div>
+              </article>
+            </li>
+            <li data-reveal>
+              <article class="recipe">
                 <span class="recipe__icon">📷</span>
                 <h3>Boeing Exit Burr Project</h3>
                 <p>Solving exit burr problems with Boeing</p>
-                <span class="recipe__mats">python · OpenCV</span>
-              </a></li>
+                <div class="recipe__foot">
+                  <span class="recipe__mats">python · OpenCV</span>
+                </div>
+              </article>
+            </li>
           </ul>
 
           <footer class="colophon" data-reveal>

@@ -1,1 +1,4 @@
 .DS_Store
+
+# Private design references (including passport photo) - never publish
+references/
